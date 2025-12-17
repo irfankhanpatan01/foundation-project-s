@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+</head>
+<body>
+    <form action="./submit" method="post">
+        <div class="input-group">
+            <input type="text" id="input-name" class="input-name" name="name" required autocomplete="off" placeholder=" ">
+            <label for="input-name">Enter your name</label> 
+        </div>
+        <div class="input-group">
+            <input type="email" id="input-email" class="input-email" name="email" placeholder=" " required autocomplete="off">
+            <label for="input-email">Enter your email</label> 
+        </div>
+        <div class="input-group">
+            <input type="tel" id="input-number" class="input-number" name="number" placeholder=" " required autocomplete="off" pattern="[0-9]{10}">
+            <label for="input-number">Enter your number</label> 
+        </div>
+        <div class="input-group">
+            <textarea name="message" id="input-message" placeholder=" " required></textarea>
+            <label for="input-message">Enter your message</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
